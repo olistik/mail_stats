@@ -57,9 +57,9 @@ module Stats
     end
 
     def get_counter(label:)
-      $redis.with do |connection|
+      ($redis.with do |connection|
         connection.get label
-      end || 0
+      end || "0").to_i
     end
 
 end
