@@ -1,0 +1,14 @@
+Emails sent: <%= @emails_sent %>
+<br>
+Clicks: <%= @clicks %>
+<br>
+E-mails opened: <%= @emails_opened %>
+<br>
+Rates:<br>
+<% @rates.each do |email_type, rates| %>
+  <div>      
+    <%= email_type %>:
+    click: <%= Percentage.format rates[:click] %>
+    open: <%= Percentage.format rates[:open] %>
+  </div>
+<% end %>
