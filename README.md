@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/olistik/mail_stats.svg)](https://travis-ci.org/olistik/mail_stats)
+
 # Mail Stats
 
 This is a web app that collects e-mail events sent from Mandrill Webhooks.
