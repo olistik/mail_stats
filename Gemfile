@@ -29,6 +29,9 @@ gem 'puma', '~> 2.11'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'turnip', '~> 1.3'
+  gem 'rspec-rails', '~> 3.0'
+  gem 'shoulda-matchers', require: false                  # Makes tests easy on the fingers and the eyes
 end
 
 group :development do
